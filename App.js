@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 
-import HeaderStyle from './HeaderStyle'
+import HeaderStyle from './HeaderStyle';
 
 const restaurants = [
   {name: 'React Cafe', address: '123 Anywhere St'},
@@ -15,6 +15,7 @@ export default class App extends Component {
   }
 
   render() {
+    console.warn("search: ", this.state.search)
     return (
       <View style={{
         flex: 1
